@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import seaborn as sns 
+
+# Print the frequency counts of "Period of stay"
+print(reviews["Period of stay"].value_counts())
+
+sns.set(font_scale=1.4)
+sns.set_style("whitegrid")
+
+# Create a bar plot of "Helpful votes" by "Period of stay"
+sns.catplot(x="Period of stay", y="Helpful votes", data=reviews, kind="bar")
+plt.show()
