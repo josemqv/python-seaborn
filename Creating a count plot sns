@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+import seaborn as sns 
+
+sns.set(font_scale=1.4)
+sns.set_style("darkgrid")
+
+# Create a catplot that will count the frequency of "Score" across "Traveler type"
+sns.catplot(x="Score",data=reviews,kind="count",hue="Traveler type")
+plt.show()
